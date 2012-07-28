@@ -7,6 +7,7 @@
 //
 
 #import "PAPTabBarController.h"
+#import "PAPFilterPhotoViewController.h"
 
 @interface PAPTabBarController ()
 @property (nonatomic,strong) UINavigationController *navController;
@@ -58,8 +59,8 @@
     [self dismissModalViewControllerAnimated:NO];
     
     UIImage *image = [info objectForKey:UIImagePickerControllerEditedImage];
-     
-    PAPEditPhotoViewController *viewController = [[PAPEditPhotoViewController alloc] initWithImage:image];
+    
+    PAPFilterPhotoViewController *viewController = [[PAPFilterPhotoViewController alloc] initWithImage:image];
     [viewController setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
     
     [self.navController setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];

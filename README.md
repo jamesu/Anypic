@@ -4,6 +4,8 @@ Anypic is the easiest way to share photos with your friends. Get the app and sha
 
 You can get the [source code](https://github.com/ParsePlatform/Anypic) and create your own Anypic with this [tutorial](https://parse.com/tutorials/anypic).
 
+This fork includes a screen in which you can apply one of 6 filters (named "Failters") to the image before attaching a comment. The filters are applied using the iOSMagick library, and are randomly generated to ensure you post the worst looking image possible.
+
 
 ## iOS Setup
 
@@ -32,6 +34,15 @@ Anypic requires Xcode 4.3+. It runs on iOS 5.0 and newer. The [tutorial](https:/
 ```objective-c
 [PFFacebookUtils initializeWithApplicationId:@"FACEBOOK_APP_ID];
 ```
+
+
+# Configuring iOSMagick
+
+1. Download iOSMagick 6.7.5-3 and the example app from http://www.imagemagick.org/download/iOS/
+
+2. Extract iosMagick into External/
+
+3. Grab any extra libs from the example app and put them in External/iosMagick-6.7.5-3/
 
 ## Web Setup 
 
